@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoronaTracerBD</title>
+    <link rel="stylesheet" href="css/bootstrap_min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9728b5bd23.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--============== start of header area ========================-->
+    <header class="sticky-top" id="header_style">
+        <nav class="navbar  navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/photos/logo-dark2x.png" height="60" width="198" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span><i class="fa fa-bars" aria-hidden="true"></i>
+                  </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">হোম</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#about_corona">করোনা সম্পর্কে</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#transmission_corona">লক্ষণ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ptirod">প্রতিরোধ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blogpost">খবর</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://surokkha.gov.bd/enroll" id="sing_in" type="button"
+                    data-target="#exampleModal"> ভ্যাকসিন নিবন্ধন</a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+          </nav>
+    </header>
+     <!--=============== end of header area  =========================-->
+
+
+    <!--================ start of banner area ======================-->
+    <section id="banner-area">
+        <div class="banner-content py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="banner-left-content">
+                            <p id="coruna_sub_title">করোনাভাইরাস</p>
+                            <h1 id="coruna_heading">করোনাভাইরাস
+                             <span class="text-primary">কোভিড -১৯</span></h1>
+                            <p id="coruna_pragraph">করোনাভাইরাস (কোভিড -১৯)) প্রথম ডিসেম্বর ২০১৯ সালে চীনের হুবেই উহানে রিপোর্ট করা হয়েছিল, পরে এই প্রাদুর্ভাবটি বিশ্ব স্বাস্থ্য সংস্থা (ডব্লিউএইচও) ১১ মার্চ ২০২০ সালে মহামারী হিসেবে স্বীকৃতি দেয়।</p>
+                            <a href="#" id="protect_btn">রক্ষা করার উপায়</a>
+    
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="banner-right-content">
+                            <img src="img/photos/header-a.png" alt="">
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==================== end of banner area =======================-->
+    
+    <!--=================== end of dynamic coruna tracer section  ialsection ====================-->
+    <section class="py-5">
+        <div class="dynamic_coruna_tracer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="coruna_tracer_heading">
+                            <h2 class="text-center py-4 text-danger">যেকোন দেশের করোনা রোগীর সংখ্যা জানুন</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row py-4">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6">
+                        <form class="form-inline" id="myForm">
+                            <div class="form-group mx-3 mb-2">
+                              <input type="text" class="form-control form-control-lg" id="country" placeholder="Country Name">
+                            </div>
+                            <button type="submit" class="btn btn-lg btn-primary mb-2" value="">ক্লিক করুন</button>
+                          </form>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+    <!---=============== start of the corona information details ====================-->
+                <div class="row text-white">
+                    <div class="col-lg-3 my-3">
+                        <div class="bg-primary p-5 text-center country_image_block">
+                            <img src="img/photos/1.webp" id="flag" height="100%" width="100%" alt="Country_image">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 my-3">
+                        <div class="country_name_block bg-primary text-center w-100 h-100 p-3">
+                            <h2>দেশের নাম</h2>
+                            <h1 id="Cun">0</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 my-3">
+                        <div class="active_case_block bg-primary text-center w-100 h-100 p-3">
+                            <h2>বর্তমান রোগীর সংখ্যা</h2>
+                            <h1 id="Active_Cases">0</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 my-3">
+                        <div class="Total_case_bloack bg-primary text-center w-100 h-100 p-3">
+                            <h2>মোট রোগীর সংখ্যা</h2>
+                            <h1 id="Total_Cases">0</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-white">
+                    <div class="col-lg-3 my-3">
+                        <div class="critical_case_block bg-primary text-center  w-100 h-100 p-3">
+                            <h2>মূমুর্শ অবস্থা</h2>
+                            <h1 id="Critical_Cases">0</h1>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 my-3">
+                        <div class="total_death_block bg-primary text-center  w-100 h-100 p-3">
+                            <h2> মৃত্যের সংখ্যা </h2>
+                            <h1 id="Total_Death">0</h1>
+                        </div>
+                       
+                    </div>
+                    <div class="col-lg-3 my-3">
+                        <div class="recoverd_block bg-primary text-center  w-100 h-100 p-3">
+                            <h2>সুস্থের সংখ্যা</h2>
+                            <h1 id="Recovered_Cases">0</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 my-3">
+                        <div class="total_test_block bg-primary text-center  w-100 h-100 p-3 ">
+                            <h2>মোট মৃত্যের সংখ্যা</h2>
+                            <h1 id="Total_Test_Done">0</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--==================== about of corona virus section ====================-->
+    <section  id="about_corona">
+        <div class="corona_virus_about_section py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <h2 >রোগ সম্পর্কে</h2>
+                        <h1 class="text-primary">করোনাভাইরাস (কোভিড -১৯)</h1>
+                        <p><span class="">কোভিড -১৯ একটি নতুন অসুস্থতা যা আপনার ফুসফুস এবং শ্বাসনালিকে প্রভাবিত করতে পারে।</span>
+                            এটি করোনা ভাইরাস নামক একটি ভাইরাস দ্বারা সৃষ্ট। ২০২০ সালের ডিসেম্বরে চীনের হুবেই শহরের উহানে এটি আবিষ্কৃত হয়।
+                        </p>
+                        <div></div>
+                        <p>সংক্রমণের সাধারণ লক্ষণগুলির মধ্যে রয়েছে শ্বাসকষ্টের লক্ষণ, জ্বর, কাশি, শ্বাসকষ্ট এবং শ্বাসকষ্ট। আরও গুরুতর ক্ষেত্রে, সংক্রমণ নিউমোনিয়া, গুরুতর তীব্র শ্বাসযন্ত্রের সিন্ড্রোম, কিডনি ব্যর্থতা এবং এমনকি মৃত্যুর কারণ হতে পারে।</p>
+                        <div></div>
+                        <p>সংক্রমণের বিস্তার রোধে মানসম্মত সুপারিশগুলির মধ্যে রয়েছে নিয়মিত হাত ধোয়া, কাশি ও হাঁচি দেওয়ার সময় মুখ ও নাক কে রাখা, মাংস এবং ডিম পুঙ্খানুপুঙ্খভাবে রান্না করা। কাশি এবং হাঁচির মতো শ্বাসকষ্টজনিত রোগের লক্ষণ দেখাচ্ছে এমন কারো সাথে ঘনিষ্ঠ যোগাযোগ এড়িয়ে চলুন।</p>
+                    </div>
+                    <div class="col-lg-5 mx-auto">
+                        <ul class="list-group" id="list_section">
+                            <li class="list-group-item text-danger"><h3>তুমি কি জানতে চাও?</h3></li>
+                            <li class="list-group-item"><a href="#"><h5>করোনাভাইরাস কিভাবে ছড়ায়?</h5></a></li>
+                            <li class="list-group-item"><a href="#"><h5>করোনাভাইরাসের লক্ষণ</h5></a></li>
+                            <li class="list-group-item"><a href="#"><h5>কিভাবে নিজেকে রক্ষা করবেন</h5></a></li>
+                            <li class="list-group-item"><a href="#"><h5>করোনাভাইরাসের চিকিৎসা</h5></a></li>
+                            <li class="list-group-item"><a href="#"><h5>কিভাবে নিজেকে রক্ষা করবেন</h5></a></li>
+                            <li class="list-group-item"><a href="#"><h5>করোনা ভাইরাসের মিথ-বাস্টার্স</h5></a></li>
+                          </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--========================= transmission of corona virus section ===================== -->
+<section>
+    <div class="transmission_of_corona_virus_section py-5" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6">
+                    <h3 class="text-danger">করোনাভাইরাস কিভাবে ছড়ায় ?</h3>
+                    <h1 class="text-primary py-3">কোভিড - ১৯ এর সংক্রমণ</h1>
+                    <p>এটি একটি নতুন অসুখ, আমরা ঠিক জানি না কিভাবে করোনাভাইরাস ব্যক্তি থেকে মানুষে ছড়ায়। একই ধরনের ভাইরাস কাশির ফোঁটায় ছড়িয়ে পড়ে।</p>
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--=============== start of post section =====================-->
+<section id="blogpost">
+    <div class="post_section py-4">
+     <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card_item">
+                    <div class="card-group">
+                        <div class="card">
+                          <img class="card-img-top" src="img/photos/spread-a.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title"><a href="#">ব্যক্তি থেকে ব্যক্তি সংক্রামিতের সাথে ঘনিষ্ঠ যোগাযোগ হিসাবে ছড়িয়ে পড়ে</a></h5>
+                            <p class="card-text">করোনাভাইরাস প্রধানত ব্যক্তি থেকে ব্যক্তির মধ্যে ছড়িয়ে পড়ে বলে মনে করা হয়। এটি এমন ব্যক্তিদের মধ্যে ঘটতে পারে যারা একে অপরের সাথে ঘনিষ্ঠ যোগাযোগ রাখে।</p>
+                            <button class="btn btn-block btn-primary">আরও পড়ুন</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card_item">
+                    <div class="card-group">
+                        <div class="card">
+                          <img class="card-img-top" src="img/photos/spread-b.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="#">সংক্রমিত উপরিভাগ বা বস্তুর স্পর্শ বা যোগাযোগ</a>
+                            </h5>
+                            <p class="card-text">একজন ব্যক্তি কোভিড -১৯ পেতে পারেন যখন কোন পৃষ্ঠ বা বস্তুতে যেটি ভাইরাস আছে তা স্পর্শ করে এবং তারপর তাদের নিজের মুখ, নাক বা সম্ভবত তাদের চোখ স্পর্শ করে।</p>
+                            <button class="btn btn-block btn-primary">আরও পড়ুন</button>
+                          </div>
+                          
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card_item">
+                    <div class="card-group">
+                        <div class="card">
+                          <img class="card-img-top" src="img/photos/spread-c.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="#">আক্রান্ত ব্যক্তির কাশি বা হাঁচি থেকে ফোঁটা</a>
+                            </h5>
+                            <p class="card-text">করোনাভাইরাস মূলত একজন থেকে অন্য ব্যক্তির মধ্যে ছড়িয়ে পড়ে বলে মনে করা হয়। এটি এমন ব্যক্তিদের মধ্যে ঘটতে পারে যারা একে অপরের সাথে ঘনিষ্ঠ যোগাযোগ রাখে।</p>
+                            <button class="btn btn-block btn-primary">আরও পড়ুন</button>
+                          </div>
+                         
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<!--================= symtom of corona virus section======================-->
+<section id="transmission_corona">
+    <div class="coronavirus_simtom_section py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                    <div class="corona_symtom_section">
+                        <h3 class="text-center text-primary py-4">করোনাভাইরাসের লক্ষণ</h3>
+                        <p class="symtom_text">কোভিড -১৯ এর সবচেয়ে সাধারণ লক্ষণ হল জ্বর, ক্লান্তি এবং শুকনো কাশি। কিছু রোগীর ব্যথা এবং ব্যথা, নাক বন্ধ হয়ে যাওয়া, নাক দিয়ে পানি পড়া, গলা ব্যথা বা ডায়রিয়া হতে পারে। এই লক্ষণগুলি সাধারণত হালকা এবং ধীরে ধীরে শুরু হয়। এছাড়াও লক্ষণগুলি এক্সপোজারের  ২-১৪ দিন পরে উপস্থিত হতে পারে।</p>
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+            <!--===== types of symtom section ============-->
+            <div class="row py-5">
+                <div class="col-lg-4">
+                    <div class="media">
+                        <div class="media-body">
+                          <h4 class="mt-0 mb-1 text-primary">জ্বর</h4>
+                         <p class="mt-4"> উচ্চ জ্বর - এর অর্থ হল আপনি আপনার বুকে বা পিঠে স্পর্শ করতে গরম অনুভব করেন (আপনার তাপমাত্রা পরিমাপ করার প্রয়োজন নেই)। এটি একটি সাধারণ চিহ্ন এবং যদি আপনি আক্রান্ত হন তাহলে ২-১০ দিনের মধ্যেও দেখা দিতে পারে।</p>
+                        </div>
+                        <img class="ml-3 rounded-circle" src="img/photos/symptom-a.png" alt="Generic placeholder image" id="img_item">
+                      </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="media">
+                        <div class="media-body">
+                          <h4 class="mt-0 mb-1 text-primary">কাশি</h4>
+                         <p class="mt-4"> ক্রমাগত কাশি - এর অর্থ হল এক ঘন্টার বেশি কাশি, অথবা ২  ঘন্টার মধ্যে বা তার বেশি কাশি পর্ব</p>
+                        </div>
+                        <img class="ml-3 rounded-circle" src="img/photos/symptom-b.png" alt="Generic placeholder image" id="img_item">
+                      </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="media">
+                        <div class="media-body">
+                          <h4 class="mt-0 mb-1 text-primary">নিঃশ্বাসের দুর্বলতা</h4>
+                         <p class="mt-4"> শ্বাস নিতে অসুবিধা-কোভিড -১  আক্রান্ত প্রতি  জনের মধ্যে প্রায় ১ জন গুরুতর অসুস্থ হয়ে পড়ে এবং শ্বাসকষ্ট বা শ্বাসকষ্ট হয়।</p>
+                        </div>
+                        <img class="ml-3 rounded-circle" src="img/photos/symptom-c.png" alt="Generic placeholder image" id="img_item">
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!---================== start of Footer section  =======================--->
+    <footer class="py-3">
+       <div class="container">
+        <div class="row py-3">
+            <div class="col-lg-3">
+                <div class="footer-pra p-2">
+                   <a href="#">
+                    <img src="img/photos/logo-dark2x.png"  class="w-100 mt-5" alt="">
+                   </a>
+                </div>
+            </div>
+            <div class="col-lg-3"> 
+              <div class="footer_list_item">
+                <h5><a href="#" style="text-decoration: none;" class="text-white">লক্ষণ</a></h5>
+
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="footer_list_item">
+                    <h5><a href="#" style="text-decoration: none;" class="text-white">প্রতিরোধ</a></h5>
+                    <h5><a href="#" style="text-decoration: none;" class="text-white">খবর</a></h5>
+
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="footer_list_item">
+                    <h5><a href="#" style="text-decoration: none;" class="text-white">করোনা সম্পর্কে</a></h5>
+                    <h5><a href="#" style="text-decoration: none;" class="text-white">চিকিৎসা</a></h5>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="copyright-text text-center py-3">
+                    <p>Copyright © 2021 All right Researved
+                        <span>CoronaTracerBD</span> 
+                        <br>
+                        <span>Design by <a href="#" style="text-decoration: none;
+                         color: rgb(7, 4, 56);">Md Shahin Hossain</a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+       </div>
+    </footer>
+    <!--=================== end of footer section    ========================-->
+
+    <script src="js/slim_min.js"></script>
+    <script src="js/proper_min.js"></script>
+    <script src="js/bootstrap_min.js"></script>
+    <script src="js/style.js"></script>
+</body>
+</html>
